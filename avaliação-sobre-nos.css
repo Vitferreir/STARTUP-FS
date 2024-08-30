@@ -1,0 +1,471 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Outros ajustes */
+body {
+    overflow-x: hidden;
+    margin-bottom: 0; 
+}
+/* Estilo da seção de desenvolvedores */
+.time-dev {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+/* logo fast-service */
+.logo-fast-service-parte-cards {
+    width: 150px;
+    transform: translate(30px, 90px);
+}
+
+/* Título principal */
+.titulo-time {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 50px;
+    animation: fadeIn 2s ease-in-out, colorChange 4s infinite alternate;
+    transform: translateY(50px);
+}
+
+/* Texto descritivo sobre os desenvolvedores */
+.descricao-time {
+    margin-bottom: 100px;
+    transform: none; 
+    margin-left: 50px; 
+    margin-top: 45px;
+}
+
+/* Textos destacados */
+.destaque {
+    color: #ff9900;
+}
+
+/* CARDS */
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-left: 490px;
+  margin-top: -410px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 2rem 0;
+}
+
+#tranding {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+.tranding-slide {
+  width: 55rem;
+  height: 50rem;
+  margin-left: -160px;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 30rem !important;
+    height: 10rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+.navegacao-circulos{
+  margin-top: -80px;
+  margin-left: 50px;
+  
+}
+.swiper-button-next{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.swiper-button-prev{
+  transform: translate(-200px, 0px);
+}
+.slider-arrow{
+  margin-top: -70px;
+  margin-left: px;
+  pointer-events: none;
+}
+
+/* Tags decorativas */
+.tag-decorativa {
+    width: 350px;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.tag-decorativa1 {
+    transform: rotate(180deg) translateY(-100px);
+    left: 50%;
+    margin-left: -175px; /* Centraliza horizontalmente */
+}
+
+.tag-decorativa2 {
+    transform: translateY(-210px) rotate(-15deg);
+    margin-left: 1130px;
+}
+
+.tag-decorativa3 {
+    transform: translateY(-120px) rotate(12deg);
+    margin-left: 180px;
+}
+
+/* Cartões de apresentação da equipe */
+.cartoes-time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: -400px;
+    transform: translateX(535px);
+}
+
+.cartao-time {
+    width: 250px;
+    height: 330px;
+    background-color: #978e8e;
+    border-radius: 30px;
+    border: #ff9900 solid;
+}
+
+/* Bolinhas decorativas */
+.bolinha-para-seta-esquerda{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ff9900;
+    transform: translate(500px, -187px);
+}
+
+.bolinha-para-seta-direita{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ff9900;
+    transform: translate(1300px, -220px);
+}
+
+
+/* Estilo geral da seção de avaliações */
+.avaliacoes {
+    display: block;
+    text-align: center;
+}
+
+/* Estilo do título principal */
+.titulo-principal {
+    font-size: 60px;
+    color: #333;
+    animation: fadeIn 2s ease-in-out, colorChange 4s infinite alternate;
+}
+
+/* Estilo dos textos destacados */
+.destaque {
+    color: #ff9900;
+}
+
+/* Estilo da imagem do chefe */
+.imagem-chefe {
+    width: 900px;
+    margin-left: -840px;
+    margin-top: -120px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: #333;
+    }
+    to {
+        color: #555;
+    }
+}
+
+/* Estilo dos cartões de avaliação */
+.avaliacoes-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 0; 
+}
+
+/* Estilo individual dos cartões de avaliação */
+.avaliacao-card {
+    width: 270px;
+    height: 340px;
+    background-color: #ffeabf;
+    border-radius: 20px;
+    margin-left: 20px; 
+    margin-top: -500px;
+    transform: translate(220px, -180px);
+    transition: trasform 0.3s ease;
+}
+.avaliacao-card:hover{
+  transform: scale(1.1);
+}
+/* Estilo do conteúdo de cada avaliação */
+.avaliacao-conteudo {
+    padding: 20px;
+}
+
+/* Estilo da imagem do perfil */
+.avaliacao-perfil {
+    width: 70px;
+    margin-top: -50px;
+}
+
+/* Estilo do nome da pessoa que avaliou */
+.avaliacao-nome {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo das estrelas de avaliação */
+.avaliacao-estrelas {
+    width: 180px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transform: translate(20px, 200px);
+}
+
+/* Estilo do comentário */
+.avaliacao-comentario {
+    font-size: 15px;
+    transform: translateY(-290px);
+}
+
+/* Estilo do texto do comentário */
+.comentario-texto {
+    transform: translate(0px, 330px);
+    font-weight: 700;
+}
+
